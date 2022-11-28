@@ -1,18 +1,24 @@
-import meter1 from "../assets/images/meter1.svg";
-import meter2 from "../assets/images/meter2.svg";
-import meter3 from "../assets/images/meter3.svg";
+import java from "../assets/images/java.svg";
+import sql from "../assets/images/sql.svg";
+import js from "../assets/images/js.svg";
+import aws from "../assets/images/aws.svg";
+import gitcat from "../assets/images/gitcat.svg";
+import backgroundImage from "../assets/images/background.png"; 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import arrow1 from "../assets/images/arrow1.svg";
 import arrow2 from "../assets/images/arrow2.svg";
-import colorSharp from "../assets/images/color-sharp.png";
+
+function myArrow({ type, onClick }) {
+  const pointer = type === consts.PREV ? { arrow1 } : { arrow2 };
+  return <button onClick={onClick}>{pointer}</button>;
+}
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 4,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -34,39 +40,38 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry's standard
-                dummy text.
-              </p>
+              <h2>My Current Skills</h2>
+              <p>Always working on more!</p> 
+              <p>Learning is a never ending journey as they say:</p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider"
+                renderArrow={myArrow}
               >
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <img src={java} alt="Image" />
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Brand Identity</h5>
+                  <img src={sql} alt="Image" />
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Logo Design</h5>
+                  <img src={js} alt="Image" />
+                  <h5>javascript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <img src={aws} alt="Image" />
+                </div>
+                <div className="item">
+                  <img src={gitcat} alt="Image" />
+                  <h5>GitHub</h5>
                 </div>
               </Carousel>
             </div>
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      <br /><br /><br /><br /><br /><br />
     </section>
   );
 };

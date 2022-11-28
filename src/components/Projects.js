@@ -1,48 +1,14 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/images/project-img1.png";
-import projImg2 from "../assets/images/project-img2.png";
-import projImg3 from "../assets/images/project-img3.png";
-import colorSharp2 from "../assets/images/color-sharp2.png";
+import backgroundImage from "../assets/images/background.png";
+import projectImage1 from "../assets/images/project-img1.png";
+import projectImage2 from "../assets/images/project-img2.png";
+import projectImage3 from "../assets/images/project-img3.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
-  const projects = [
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-  ];
-
   return (
-    <section className="project" id="project">
+    <section className="projects" id="projects">
       <Container>
         <Row>
           <Col size={12}>
@@ -54,13 +20,7 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
+                  <p>Here is what I have been working on:</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
@@ -68,13 +28,13 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">Capstone</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="second">Website</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">Groceries</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -84,28 +44,25 @@ export const Projects = () => {
                       }
                     >
                       <Tab.Pane eventKey="first">
-                        <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
-                        </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="section">
+                        <img src={projectImage1} alt="projectimage1" />
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          This was my capstone project for while I was attending the Dev10 program. 
+                          This showcases use of a fullstack application to create an app for joggers to meet up using Java, SQL, and Javascript.
+                          Additionally, the app was to be created by a team using Github and AWS to demonstrate our abilities to work in a collaborative environment
+                        </p>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <img src={projectImage2} alt="projectimage2" />
+                        <p>
+                          This website you are reading now is a project that I will always find myself coming back to. 
+                          I enjoy returning to update it with changes in my plans or any ideas that I wish to experiment with!
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
+                        <img src={projectImage3} alt="projectimage3" />
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          I am currently working on an app that can scan mini QR codes to help manage our groceries at home. 
+                          This is to help prevent waste from food that we forget to eat.
                         </p>
                       </Tab.Pane>
                     </Tab.Content>
@@ -115,8 +72,8 @@ export const Projects = () => {
             </TrackVisibility>
           </Col>
         </Row>
+        <br /><br /><br /><br /><br /><br />
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
     </section>
   );
 };
