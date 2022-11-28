@@ -42,7 +42,7 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2>My Current Skills</h2>
               <p>Always working on more!</p> 
-              <p>Learning is a never ending journey as they say:</p>
+              <p><i>Learning is a never ending journey</i></p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -50,20 +50,20 @@ export const Skills = () => {
                 renderArrow={myArrow}
               >
                 <div className="item">
-                  <img src={java} alt="Image" />
+                  <img src={java} alt="Image" height="200" width="200" />
                 </div>
                 <div className="item">
-                  <img src={sql} alt="Image" />
+                  <img src={sql} alt="Image" height="200" width="200" />
                 </div>
                 <div className="item">
-                  <img src={js} alt="Image" />
+                  <img src={js} alt="Image" height="200" width="200"/>
                   <h5>javascript</h5>
                 </div>
                 <div className="item">
-                  <img src={aws} alt="Image" />
+                  <img src={aws} alt="Image" height="200" width="200" />
                 </div>
                 <div className="item">
-                  <img src={gitcat} alt="Image" />
+                  <img src={gitcat} alt="Image" height="200" width="200" />
                   <h5>GitHub</h5>
                 </div>
               </Carousel>

@@ -2,8 +2,6 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import icon1 from "../assets/images/gmail.svg";
 import icon2 from "../assets/images/linkedin.svg";
 import jamesfunk from "../assets/images/jamesfunk.jpg";
-import "animate.css";
-import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
   return (
@@ -11,27 +9,15 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+                <div>
                   <h1>{`James Funk`}</h1>
 
                   <Col>
-                    <TrackVisibility>
-                      {({ isVisible }) => (
-                        <div
-                          className={
-                            isVisible ? "animate__animated animate__zoomIn" : ""
-                          }
-                        >
-                          <img src={jamesfunk} alt="James Funk" />
+                    
+                        <div>
+                          <img src={jamesfunk} alt="James Funk" height="240" width="190"/>
                         </div>
-                      )}
-                    </TrackVisibility>
+                      
                   </Col>
 
                   <p>
@@ -48,8 +34,6 @@ export const Banner = () => {
                   </p>
                   <br /><br /><br /><br /><br /><br />  
                 </div>
-              )}
-            </TrackVisibility>
           </Col>
         </Row>
       </Container>
