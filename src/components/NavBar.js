@@ -29,41 +29,41 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/about-me">
-            <img src={logo} alt="Logo" height="100" width="200" />
-          </Navbar.Brand>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link
-                href="#home"
-                className={
-                  activeLink === "home" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("home")}
-              >
-                Home
-              </Nav.Link>
-              <Nav.Link
-                href="#skills"
-                className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("skills")}
-              >
-                Skills
-              </Nav.Link>
-              <Nav.Link
-                href="#projects"
-                className={
-                  activeLink === "projects"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("projects")}
-              >
-                Projects
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
+            <img src={logo} alt="Logo" height="100" width="216" />
+            </Navbar.Brand>
+              <Nav className="ms-auto">
+                <Nav.Link
+                  href="#home"
+                  className={
+                    activeLink === "home" ? "active navbar-link" : "navbar-link"
+                  }
+                  onClick={() => onUpdateActiveLink("home")}
+                >
+                  <font color="#29a329">Home</font>
+                </Nav.Link>
+                <Nav.Link
+                  href="#skills"
+                  className={
+                    activeLink === "skills"
+                      ? "active navbar-link"
+                      : "navbar-link"
+                  }
+                  onClick={() => onUpdateActiveLink("skills")}
+                >
+                  <font color="#29a329">Skills</font>
+                </Nav.Link>
+                <Nav.Link
+                  href="#projects"
+                  className={
+                    activeLink === "projects"
+                      ? "active navbar-link"
+                      : "navbar-link"
+                  }
+                  onClick={() => onUpdateActiveLink("projects")}
+                >
+                  <font color="#29a329">Projects</font>
+                </Nav.Link>
+              </Nav>
         </Container>
       </Navbar>
     </Router>
