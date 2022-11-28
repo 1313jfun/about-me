@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/about-me/static/css/main.be6934f4.css",
-    "main.js": "/about-me/static/js/main.ba7036ca.js",
+    "main.css": "/about-me/static/css/main.5af24a48.css",
+    "main.js": "/about-me/static/js/main.1568989e.js",
     "static/js/787.bf6be429.chunk.js": "/about-me/static/js/787.bf6be429.chunk.js",
     "static/media/project-img1.png": "/about-me/static/media/project-img1.a41eaeedfeda7a9ce5a3.png",
     "static/media/jamesfunk.jpg": "/about-me/static/media/jamesfunk.1eec60046751e19143c3.jpg",
@@ -14,18 +14,19 @@
     "static/media/java.svg": "/about-me/static/media/java.9441dea854eac07da0d7b68ef8d0d4a7.svg",
     "static/media/logo.svg": "/about-me/static/media/logo.a81e55e0967265689e25954abcfd3bdc.svg",
     "static/media/sql.svg": "/about-me/static/media/sql.e739100c3ff82545794716732096c314.svg",
+    "static/media/lightbulb.svg": "/about-me/static/media/lightbulb.eb6a20324902dc3711e3d27694b641cb.svg",
     "static/media/linkedin.svg": "/about-me/static/media/linkedin.9b59fa920fcee3470687eb56246cf638.svg",
     "static/media/js.svg": "/about-me/static/media/js.e83d753c4a3373fac205b64a22ba5e15.svg",
     "index.html": "/about-me/index.html",
     "static/media/gitcat.svg": "/about-me/static/media/gitcat.9375835639d5c433d3fc5bbb74590dc7.svg",
     "static/media/arrow2.svg": "/about-me/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/about-me/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
-    "main.be6934f4.css.map": "/about-me/static/css/main.be6934f4.css.map",
-    "main.ba7036ca.js.map": "/about-me/static/js/main.ba7036ca.js.map",
+    "main.5af24a48.css.map": "/about-me/static/css/main.5af24a48.css.map",
+    "main.1568989e.js.map": "/about-me/static/js/main.1568989e.js.map",
     "787.bf6be429.chunk.js.map": "/about-me/static/js/787.bf6be429.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be6934f4.css",
-    "static/js/main.ba7036ca.js"
+    "static/css/main.5af24a48.css",
+    "static/js/main.1568989e.js"
   ]
 }
