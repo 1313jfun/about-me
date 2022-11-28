@@ -28,7 +28,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/about-me">
             <img src={logo} alt="Logo" height="100" width="200" />
           </Navbar.Brand>
           <Navbar.Collapse id="basic-navbar-nav">
