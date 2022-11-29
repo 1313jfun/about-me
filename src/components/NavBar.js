@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/images/logo.svg";
+
 import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
@@ -62,6 +63,17 @@ export const NavBar = () => {
                   onClick={() => onUpdateActiveLink("projects")}
                 >
                   <font color="#29a329">Projects</font>
+                </Nav.Link>
+                <Nav.Link
+                  href="#resume"
+                  className={
+                    activeLink === "resume"
+                      ? "active navbar-link"
+                      : "navbar-link"
+                  }
+                  onClick={() => onUpdateActiveLink("projects")}
+                >
+                  <font color="#29a329">Resume</font>
                 </Nav.Link>
               </Nav>
         </Container>
