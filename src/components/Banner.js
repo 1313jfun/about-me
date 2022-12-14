@@ -30,7 +30,7 @@ export const Banner = () => {
                   <p>
                     <a href="https://www.linkedin.com/in/james-funk-a62a92220"><img src={icon2} height="50" width="50" /></a>
 
-                    <a id="myEmail" href="mailto:1313jfun@gmail.com"><img src={icon1} height="50" width="50" /></a>
+                    <a id="myEmail" href="mailto:1313jcfunk@gmail.com"><img src={icon1} height="50" width="50" /></a>
                   </p>
                   <br /><br /><br /><br /><br /><br />  
                 </div>
